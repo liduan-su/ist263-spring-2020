@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "ShermanSerif";
+    src: url("https://assets.syracuse.edu/fonts/shermanserif-book.woff2") format("woff2"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book.woff") format("woff"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0020-007F, U+00A9, U+00AE, U+2013-201D;
+}
+@font-face {
+    font-family: "ShermanSerif";
+    src: url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.woff2") format("woff2"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.woff") format("woff"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+00A0-00A8, U+00C0-024F, U+201E-2026;
+   }
+
+header {
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+body {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
+
+section {
+    border-bottom-style: solid;
+    margin: 24px;
+    opacity: 24dp;
+}
+
+li {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    list-style-type: square;
+}
+
+span.date {
+    float: right;
+}
+
+span.syracuse {
+    font-family: ShermanSerif, Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #f76900;
+}
+
+a {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
