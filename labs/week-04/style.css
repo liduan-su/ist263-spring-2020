@@ -4,16 +4,24 @@ body {
 h4 {
     font-size: 16px;
     color: blue;
+    font-weight: bolds;
 }
-h4.orange {
+h1.orange {
     color: orange;
     text-align: center;
+    font-size: x-larger;
     /* your properties here */
+}
+
+table{
+    border: none;
 }
 thead {
     background-color: #eaeaea;
     color: #333;
-    /* your properties here */}
+    /* your properties here */
+}
+
 tbody {
     background-color: #f2f2f2;
     color: #666;
