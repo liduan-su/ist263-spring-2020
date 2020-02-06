@@ -23,6 +23,9 @@ header {
     font-family: 'Noto Serif', serif;
     font-weight: normal;
     text-align: center;
+    background-color: #bcbcbc;
+    padding: 8px;
+    
 }
 
 body {
@@ -47,7 +50,7 @@ h3 {
 
 section {
     border-bottom-style: solid;
-    margin: 24px;
+    margin: 12px;
     opacity: 24dp;
 }
 
@@ -71,4 +74,14 @@ span.syracuse {
 a {
     font-family: 'Noto Serif', serif;
     font-weight: bold;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200px;
+    padding: 12px 16px;
+    background-color: #eeeeee;
+    position:fixed;
+    z-index: 1 ;
+    overflow: auto;
 }
