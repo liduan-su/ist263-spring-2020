@@ -10,6 +10,7 @@ body {
 
 .row {
     display: flex;
+    background-color: red;
 }
 
 .col {
