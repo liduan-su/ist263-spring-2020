@@ -49,6 +49,11 @@ h3 {
 }
 
 section {
+    margin: 12px;
+    opacity: 24dp;
+}
+
+section.bottom-border {
     border-bottom-style: solid;
     margin: 12px;
     opacity: 24dp;
@@ -84,4 +89,22 @@ a {
     position:fixed;
     z-index: 1 ;
     overflow: auto;
+}
+
+.page-container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-3 {
+    flex: 3;
 }
