@@ -5,7 +5,10 @@ This is the class code file for the IST 263 course in Syracuse University
 ## What programing language I use or learn here?
 - HTML, this is basically I learn from the class
 - CSS
+- BootStrap 4
 
 might be more....
 ## Some Third-Party thing I used?
-Not yet...
+Font Awsome
+Material.io from Google
+and the Internet！
