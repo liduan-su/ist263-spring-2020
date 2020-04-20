@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,33 +15,70 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!--RemixIcon-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/project/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/project/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/project/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/project/img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#c91f37">
+        <link rel="shortcut icon" href="/project/img/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="/project/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!--W3 JS-->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
 
         <link href="../css/style.css" rel="stylesheet">
 
         <title>Resume - This is Liwen Duan</title>
     </head>    
-    <body> 
-        <div class="header-nr">
+    <body class="position-relative" data-spy="scroll" data-target="#resume-nav" data-offset="100">
+        <div class="header-nr-nav sticky-top">
             <header>
-                <div class="page-logo-set">
-                    <a class="nostyle" href="../index.html"><img class="logo" src="../img/logo.png" alt="Logo">| Resume</a>
-                </div>
+                <nav id="resume-nav" class="navbar navbar-dark bg-transparent">
+                    <a class="navbar-brand" href="/project/index.html" title="Back to Home Page">
+                        <img src="/project/img/lwd-stamp.png" alt="Logo" width="35" height="35" class="d-inline-block align-top">
+                        | Resume
+                    </a>
+                    <ul class="nav nav-pills justified-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Experience</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item " href="#work-1">Undergraduate Teaching Assistant</a>
+                                <a class="dropdown-item " href="#work-2">Intership</a>
+                                <a class="dropdown-item " href="#work-3">Director at LuheITV</a>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="#skill">Skill</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-3 padding">
-                    <aside class="fixed background-light padding">
-                        <img src="../img/profile.jpg" alt="Liwen Duan's selfie" style="height: 200px;" >
+                <div class="col-lg-3 col padding">
+                    <aside class="fixed background-light padding top-10 md-center">
+                        <img src="../img/profile.jpg" alt="Liwen Duan's selfie" class="profile">
                         <h2>Liwen Duan</h2>
-                        <ul style="list-style-type: none;">
+                        <ul style="list-style-type: none; padding-left: 0;">
                             <li><i class="fas fa-phone-alt"></i> <a href="tel:+13154504201">(315)450-4201</a></li>
                             <li><i class="fas fa-envelope"></i> <a href="mailto:liduan@syr.edu">liduan@syr.edu</a></li>
                             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lwd">My Linkedin</a></li>
                         </ul>
 
-                        <nav id="resume-nav" class="nav">
-                            <ul class="nav">
+                        <!--<nav  class="navbar navbar-light" id="resume-nav">
+                            <ul class="nav nav-pills flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                                 </li>
@@ -58,10 +95,10 @@
                                     <a class="nav-link" href="#skill">Skill</a>
                                 </li>                                
                             </ul>
-                        </nav>
+                        </nav>-->
                     </aside>
                 </div>
-                <div class="col-lg padding position-relative" data-spy="scroll" data-target="#resume-nav">
+                <section class="col-lg padding ">
                     <h2 id="about">About Me</h2>
                     <p>I am a international student study in iSchool@Syracuse Unviersity persuing a undergraduate degree
                         learning about how to utilize information technology to change our world. I believe IT is the trend of development right now and it will be the future. With good technology, it will help many people to make some good decisions and help them to succeed in their careers.
@@ -155,21 +192,22 @@
                             <td><i class="fab fa-wordpress fa-3x" title="WordPress"></i></td>
                             <td><i class="fab fa-adobe fa-3x" title="Adobe Creative Cloud"></i></td>
                         </tr>
-                    </table>
-    
-                </div>
-            </div>
-
-            <main style="flex: 3;">
-
-
-            </main>
-    
+                    </table>    
+                </section>
+            </div>    
         </div>
         <footer class="ftStyle">
-            <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
-            <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
-            <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
+            <ul class="nav">
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
+                </li>
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
+                </li>
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
+                </li>
+            </ul>
         </footer>    
 </body>
 </html>

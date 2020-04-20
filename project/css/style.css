@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC&display=swap');
 
 .position-relative {
     position: relative;
@@ -17,40 +17,52 @@
     margin: 1em;
 }
 
-
-.content {
-    width: 800px;
+.center {
+    text-align: center;
 }
 
 .header-index {
     margin: auto;
-    width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 2em;
     background-color: #00796b;
 }
 
 .header-nr {
     margin: auto;
-    width: 100%;
     height: 80px;
     padding: 1em;
     background-color: #00796b;
-    text-align: left;
+    text-align: center;
+}
+
+.header-nr-nav {
+    margin: auto;
+    height: 160px;
+    padding: 1em;
+    background-color: #00796b;
+    text-align: center;
 }
 
 h1.index{
     color: #fff;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
+    margin-top: -80px;
+    padding-top: 80px;
 }
 
 h3 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
+    margin-top: -80px;
+    padding-top: 80px;
 }
 
 .left-indent {
@@ -65,12 +77,22 @@ img.center {
 }
 
 img.logo-index {
-    max-height: 80px;
+    max-height: 100px;
+    padding: 0.5em;
 }
 
 img.logo{
     width: auto;
     max-height: 40px;
+    padding-right: 0.5em;
+}
+
+img.profile {
+    height: 150px;
+}
+
+img.content{
+    width: 100%;
 }
 
 .service-icon{
@@ -92,26 +114,13 @@ img.logo{
     color: #ff9100;
 }
 
+.white{
+    color: white;
+}
+
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
 }
-
-/*.row {
-    display: flex;
-}
-
-.col {
-    flex: 1;
-    width: 300px;
-    padding: 1em;
-    margin: 1em;
-    background: #fff;
-}
-
-.col-1{
-    flex: 1;
-    padding: 1em;
-}*/
 
 .page-logo-set{
     height: 40px;
@@ -122,10 +131,19 @@ p {
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
     color: #00796b;
+    text-align: center;
+    padding: 0.5em;
+}
+
+a.white {
+    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
     text-align: center;
     padding: 0.5em;
 }
@@ -154,15 +172,17 @@ a.ft{
 
 a.nostyle{
     text-decoration: none;
-    color: #fff; 
+    color: #ffffff; 
 }
 
 footer.ftStyle {
     margin: auto;
     width: 100%;
-    height: 100px;
+    height: 150px;
     padding: 2em;
     background-color: #00796b;
+    font-size: small;
+    text-align: center;
 }
 
 td {
@@ -188,9 +208,55 @@ td.service-icon{
 
 .fixed{
     position: sticky;
-    top: 2%;
+    top: 0%;
 }
 
-img.content{
-    height: 400px;
+.top-10 {
+    top: 10%;
+}
+
+ul.nostyle {
+    list-style: none;
+    padding: 0;
+}
+
+li.ft{
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+}
+
+@media (min-width: 445px) {
+    .header-nr-nav {
+        height: 120px;
+    }
+}
+@media (min-width: 576px) {
+    .header-index {
+        height: 200px;
+    } 
+}
+@media (min-width: 608px) {
+    .header-nr-nav {
+        height: 80px;
+    } 
+}
+@media (min-width: 768px) {
+    footer.ftStyle {
+        height: 180px;
+        font-size: medium;
+    }
+}
+@media (min-width: 992px) { 
+ 
+}
+@media (min-width: 1200px) {
+    img.profile {
+        height: 200px;
+    }
+    aside {
+        text-align: left;
+    }
 }

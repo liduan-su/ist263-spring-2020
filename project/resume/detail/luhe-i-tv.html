@@ -15,6 +15,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!--RemixIcon-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#c91f37">
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
         <link href="../../css/style.css" rel="stylesheet">
 
@@ -23,14 +33,17 @@
     <body> 
         <div class="header-nr">
             <header>
-                <div class="page-logo-set">
-                    <a class="nostyle" href="../../index.html"><img class="logo" src="../../img/logo.png" alt="Logo">| Resume</a>
-                </div>
+                <nav id="resume-nav" class="navbar navbar-dark bg-transparent">
+                    <a class="navbar-brand" href="/project/index.html" title="Back to Home Page">
+                        <img src="/project/img/lwd-stamp.png" alt="Logo" width="35" height="35" class="d-inline-block align-top">
+                        | Resume
+                    </a>
+                </nav>
             </header>
         </div>
         <main class="container background-light padding">
             <p><a class="content" href="../index.html#work-3">&lt; Back to previous page</a></p>
-            <div class="container content">
+            <article>
                 <h1>LuheITV</h1>
                 <h2>What did I do?</h2>
                 <img class="center content" src="../../img/Project-show-1.jpg" alt="photo of me working in field during this experience" >
@@ -52,13 +65,21 @@
                     <a href="https://www.bilibili.com/video/av5084255"><i class="ri-bilibili-line"></i> View in Bilibili</a>
                 </p>
     
-            </div>
+            </article>
 
         </main>
         <footer class="ftStyle">
-            <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
-            <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
-            <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
-        </footer>
+            <ul class="nav">
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
+                </li>
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
+                </li>
+                <li>
+                    <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
+                </li>
+            </ul>
+        </footer>    
     </body>    
 </html>
